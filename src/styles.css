@@ -10,6 +10,8 @@
   --color-sage-fg: #f3e8d2;
   --color-clay: #a84b2f;
   --color-clay-fg: #fff6eb;
+  --color-honey: #c4893a;
+  --color-honey-fg: #fff6e8;
   --color-ok: #2f6a45;
   --color-miss: #8a4330;
   --color-ring: #3e6b4f;
@@ -68,6 +70,59 @@
     outline: 3px solid var(--color-sage);
     outline-offset: 3px;
   }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: scale(0.25);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes stamp {
+  0% {
+    opacity: 0;
+    transform: scale(1.35) rotate(-10deg);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(0.96) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-3deg);
+  }
+}
+
+.animate-pop {
+  animation: pop 0.28s var(--ease-out) both;
+}
+
+.animate-enter {
+  animation: enter 0.32s var(--ease-out) both;
+}
+
+.animate-stamp {
+  animation: stamp 0.52s var(--ease-out) both;
 }
 
 @keyframes shake {
