@@ -103,6 +103,10 @@ en = {
     "I-have-a-ball": "I have a ball",
     "the-cup-is": "the cup is",
     "the-cups-are": "the cups are",
+    "Its-a-cat": "It's a cat.",
+    "Its-an-apple": "It's an apple.",
+    "this-isnt-a-cat": "This isn't a cat.",
+    "that-isnt-a-cat": "That isn't a cat.",
 }
 
 pairs = [
@@ -117,6 +121,10 @@ pairs = [
     ("Imam.", "I have", "pair-I-have"),
     ("Sem.", "I am", "pair-I-am"),
     ("Si.", "you are", "pair-you-are"),
+    ("To je mačka.", "It's a cat.", "pair-Its-a-cat"),
+    ("To je jabolko.", "It's an apple.", "pair-Its-an-apple"),
+    ("To ni mačka.", "This isn't a cat.", "pair-this-isnt-a-cat"),
+    ("Tisto ni mačka.", "That isn't a cat.", "pair-that-isnt-a-cat"),
 ]
 
 
